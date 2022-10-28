@@ -41,4 +41,22 @@
             }
         }
     }
+
+    @media screen  and (max-width: 415px) 
+    and (max-width: 896px) 
+    {
+        .prompts{
+            p{
+                margin-left: 10% ;
+            }
+        }
+
+        .typingModal{
+            width: 80%;
+
+            textarea{
+                font-size: 22px;
+            }
+        }
+    }
 }

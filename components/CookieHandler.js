@@ -9,7 +9,7 @@ function CookieHandler({set, state, setCook}) {
             state == false ?
                 <div className={styles.welcome}>
                     <div className={styles.modal}>
-                        <Image src="/wh.svg" alt="" />
+                        <img src="/wh.svg" alt="" />
                         <h1>Welome to WriteHaiku!</h1>
                         <p>WriteHaiku is easy! Write a line of your Haiku, end it with a comma, and WH will bring you generative art based on your story. You can write as many lines as you want, but once you place add a comma, the line can&apos;t be re-written.</p>
                         <p>Once you&apos;re ready, just start typing!</p>

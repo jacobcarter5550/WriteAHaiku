@@ -64,9 +64,11 @@ function Home({set}) {
 
     return (
         <div className={styles.home}>
-            {prompts.map((item, ind)=>{
-                return <p key={ind}>{item}</p>
-            })}
+            <aside className={styles.prompts}>
+                {prompts.map((item, ind)=>{
+                    return <p key={ind}>{item}</p>
+                })}
+            </aside>
             <section className={styles.typingModal}>
                 <textarea  autoFocus ref={inpRef}
                 onChange={(e)=>{setV(e.target.value)}} 
