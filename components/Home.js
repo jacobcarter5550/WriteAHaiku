@@ -34,19 +34,19 @@ function Home({set}) {
 
     useKeyPress('Comma', breakCallCheck, { prompts, setPrompts, val, inpRef})
 
-    var duration = 15 * 1000;
-    var animationEnd = Date.now() + duration;
-    var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
-
-    function randomInRange(min, max) {
-      return Math.random() * (max - min) + min;
-    }
-
+    
     useEffect(()=>{
         inpRef.current.focus()
     },[])
-
+    
     useEffect(()=>{
+        var duration = 15 * 1000;
+        var animationEnd = Date.now() + duration;
+        var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+    
+        function randomInRange(min, max) {
+          return Math.random() * (max - min) + min;
+        }
         if(syllables[0] && syllables[0]==5) {
             if(syllables[1] && syllables[1]==7) {
                 if(syllables[2] && syllables[2]==5) {
