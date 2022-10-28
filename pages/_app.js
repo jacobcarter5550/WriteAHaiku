@@ -20,6 +20,7 @@ function MyApp({ Component, pageProps }) {
 
   return <>
       <Head>
+        <meta name="theme-color" content="#231F20"/>
         <link rel="shortcut icon" href="/wh.svg" />
         <meta property="og:image" content='/preview.png' />
         <style>{`html, body{background-size: cover;height:100vh; background-repeat: no-repeat; ${bgC} }`}</style>
