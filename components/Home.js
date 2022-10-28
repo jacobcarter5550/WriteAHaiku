@@ -64,8 +64,8 @@ function Home({set}) {
 
     return (
         <div className={styles.home}>
-            {prompts.map((item)=>{
-                return <p>{item}</p>
+            {prompts.map((item, ind)=>{
+                return <p key={ind}>{item}</p>
             })}
             <section className={styles.typingModal}>
                 <textarea  autoFocus ref={inpRef}
