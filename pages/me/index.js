@@ -19,8 +19,8 @@ function Index() {
             <div className={styles.area}>
                 <Link href='/'> ←Write a Haiku</Link>
                 <section style={{marginTop:'5px'}} className={styles.articles}>
-                    {haikus.map((item)=>{
-                        return <Link href={`/me/${item[0].prompt}`}>
+                    {haikus.map((item,ind)=>{
+                        return <Link key={ind} href={`/me/${item[0].prompt}`}>
                             <h3>{item[0].prompt}</h3>
                             <img src={item[0].img} alt="" />
                         </Link>

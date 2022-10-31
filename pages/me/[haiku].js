@@ -24,8 +24,8 @@ function Haiku({router}) {
 
 
     return (<>
-        {haikus[0]?.map((item)=>{
-            return <div style={{
+        {haikus[0]?.map((item, ind)=>{
+            return <div key={ind} style={{
                 scrollBehavior:'smooth',
                 backgroundSize: 'cover', height:'100vh', backgroundRepeat: 'no-repeat',
                 overflow:'auto',backgroundImage:`url(${item.img})`, width:'100vw', height:'100vh', alignContent:'center', display:'block'}}>
