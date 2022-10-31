@@ -1,6 +1,6 @@
 import {  withCookies } from 'react-cookie';
 import styles from '../styles/sass/Welcome.module.scss'
-import v4 from 'uuid'
+import {v4} from 'uuid'
 import { createCookies } from '../lib/api';
 
 function CookieHandler({set, state, setCook}) {
