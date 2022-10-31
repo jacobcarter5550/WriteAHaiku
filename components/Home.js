@@ -18,7 +18,7 @@ function Home({set}) {
 
 
     const configuration = new Configuration({
-        apiKey: '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',
+        apiKey: process.env.AI_KEY,
     });
     const openai = new OpenAIApi(configuration);
 
