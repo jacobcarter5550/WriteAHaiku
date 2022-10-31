@@ -16,7 +16,7 @@ const id = v4()
                         <p>Once you&apos;re ready, just start typing!</p>
                         <br />
                         <p>PS: try getting a perfect 5-7-5 haiku 👀 🎉</p>
-                        <button onClick={()=>{setCook('visited', true),setCook('temp', {id:id, data: [data]}), createCookies({id:id}), set(true)}}>Get Started</button>
+                        <button onClick={()=>{setCook('visited', true),setCook('temp', {id:id, data: [data]}), set(true)}}>Get Started</button>
                     </div>
                 </div>
             :
