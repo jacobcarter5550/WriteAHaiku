@@ -3,7 +3,7 @@ import styles from '../../styles/sass/Me.module.scss'
 import { useEffect, useState } from "react"
 import Link from "next/link"
 
-function index() {
+function Index() {
     
     const [cookies, setCookies,] = useCookies(['temp']),
     [haikus, setHaikus] = useState([])
@@ -31,4 +31,4 @@ function index() {
     </>)
 }
 
-export default index
+export default Index

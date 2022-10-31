@@ -4,12 +4,10 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { withRouter } from "next/router"
 
-function haiku({router}) {
-    console.log(router.asPath, router)
-    const [cookies, setCookies,] = useCookies(['temp']),
-    [haikus, setHaikus] = useState([])
+function Haiku({router}) {
 
-
+    const [ haikus, setHaikus] = useState([])
+    const [ cookies, setCookies,] = useCookies(['temp'])
 
     useEffect(()=>{
         const mapHaikus = cookies.temp.data.map((item)=>{
@@ -23,8 +21,6 @@ function haiku({router}) {
         console.log(mapHaikus)
         setHaikus(mapHaikus)
     },[router])
-
-
 
 
     return (<>
@@ -41,4 +37,4 @@ function haiku({router}) {
     </>)
 }
 
-export default withRouter(haiku)
+export default withRouter(Haiku)
