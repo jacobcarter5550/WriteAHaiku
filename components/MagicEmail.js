@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import styles from '../styles/sass/login.module.scss'
+import styles from '../styles/sass/Login.module.scss'
 
 const EmailForm = ({ onEmailSubmit, disabled, }) => {
     const [ email, setEmail] = useState('')
