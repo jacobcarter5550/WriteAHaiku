@@ -1,8 +1,10 @@
 import '../styles/globals.css'
 import Head from 'next/head'
 import { useState,useEffect } from 'react'
-import { useCookies, withCookies } from 'react-cookie';
+import { useCookies } from 'react-cookie';
 import CookieHandler from '../components/CookieHandler';
+import Nav from '../components/Nav';
+import { magic } from '../lib/magic';
 
 function MyApp({ Component, pageProps }) {
 
@@ -16,6 +18,11 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(()=>{
     setCC(cookies.visited)
+    async function doAuth() {
+      const isLoggedIn = await magic.user.isLoggedIn()
+      console.log(isLoggedIn)
+    }
+    doAuth()
   },[])
 
   return <>
@@ -26,6 +33,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image" content='/preview.png' />
         <style>{`html, body{background-size: cover;height:100vh; background-repeat: no-repeat; ${bgC} }`}</style>
       </Head>
+      <Nav />
       {!cc && <CookieHandler set={setClose} state={closeC} setCook={setCookie} /> }
       <Component {...pageProps} set={setImg}/>
   </>

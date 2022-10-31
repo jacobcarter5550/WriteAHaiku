@@ -1,9 +1,10 @@
 import {  withCookies } from 'react-cookie';
 import styles from '../styles/sass/Welcome.module.scss'
-import Image from 'next/image';
+import v4 from 'uuid'
+import { createCookies } from '../lib/api';
 
 function CookieHandler({set, state, setCook}) {
-
+const id = v4()
     return (<>
         {
             state == false ?
@@ -15,7 +16,7 @@ function CookieHandler({set, state, setCook}) {
                         <p>Once you&apos;re ready, just start typing!</p>
                         <br />
                         <p>PS: try getting a perfect 5-7-5 haiku 👀 🎉</p>
-                        <button onClick={()=>{setCook('visited', true), set(true)}}>Get Started</button>
+                        <button onClick={()=>{setCook('visited', true),setCook('temp', {id:id, data: [data]}), createCookies({id:id}), set(true)}}>Get Started</button>
                     </div>
                 </div>
             :
