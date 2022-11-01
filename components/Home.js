@@ -13,15 +13,13 @@ import { magic } from '../lib/magic';
 import { updateCookies } from '../lib/api';
 import Link from 'next/link';
 
+const aiKey =  process.env.NEXT_PUBLIC_AI_KEY
+
 function Home({set}) {
-
-
-
     const configuration = new Configuration({
-        apiKey: process.env.AI_KEY,
+        apiKey: aiKey,
     });
     const openai = new OpenAIApi(configuration);
-
 
     nlp.plugin(speechPlugin)
 
