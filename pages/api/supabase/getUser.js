@@ -16,7 +16,7 @@ export default async function getSupa (req, res) {
     let { data, error } = await supabase.from('Users').select('*, Collections(*),').match({id:id})
 
     if(data == (null || '')) {
-        await supabase .from('questions').insert([{
+        await supabase.from('questions').insert([{
             id:uuid
         }]).then(async()=> await supabase.from('users').insert([{
             id : id, email : email, issuer: userData.issuer, questionID:uuid

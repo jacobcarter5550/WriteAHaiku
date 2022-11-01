@@ -16,6 +16,23 @@ a {
   box-sizing: border-box;
 }
 
+.button1{
+  background-color: #231F20;
+  border-radius: 2px;
+  padding: 0px 1em;
+  border: none;
+  color: #F9E2EC;
+}
+
+.button2{
+  font-family: 'Work Sans';
+  color: #231F20;
+  background-color: #F9E2EC;
+  border-radius: 2px;
+  padding: 0px 1.5em;
+  border: none;
+}
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

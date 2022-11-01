@@ -12,17 +12,18 @@ import SignUp from './SignUp';
 import { magic } from '../lib/magic';
 import { updateCookies } from '../lib/api';
 import Link from 'next/link';
+import Login from './LoginModal';
+
+const aiKey =  process.env.NEXT_PUBLIC_AI_KEY
+
 
 function Home({set}) {
 
-
-
     const configuration = new Configuration({
-        apiKey: process.env.AI_KEY,
+        apiKey: aiKey,
     });
     const openai = new OpenAIApi(configuration);
-
-
+    
     nlp.plugin(speechPlugin)
 
     const [val, setV] = useState(),
@@ -106,10 +107,10 @@ function Home({set}) {
 
     function save () {
         const temp = cookies.temp
-        // if(temp.data.length == 3) {
-        //     setSign(true)
-        //     return
-        // }
+        if(temp.data.length >= 3) {
+            setSign(true)
+            return
+        }
 
         const data = prompts.map((item,ind)=>{return {prompt: item, img:imgs[ind]}})
         const isPass = temp.data.map((item)=>{
@@ -120,13 +121,13 @@ function Home({set}) {
 
         if(isPass == 0 ){
             setCookies('temp', {id:temp.id, data: [...temp.data, data]})    
-            // updateCookies({id:temp.id, data: [...temp.data, data]})
+            updateCookies({id:temp.id, data: [...temp.data, data]})
         } else {} 
         setImgs([]), set(), setPrompts([]), setSylls([])
     }
 
     return (<>
-        {sign && <SignUp />}
+        {sign && <Login />}
         <div className={styles.home}>
             <div className={styles.area}>
                 <aside className={styles.prompts}>

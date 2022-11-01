@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#231F20" media="(prefers-color-scheme: dark)"/>
         <link rel="shortcut icon" href="/wh.svg" />
         <meta property="og:image" content='/preview.png' />
-        <style>{`html, body{background-size: cover;height:100vh; background-repeat: no-repeat; ${bgC} }`}</style>
+      <style>{`html, body{background-size: cover;height:100vh; background-repeat: no-repeat; ${bgC} }`}</style>
       </Head>
       <Nav />
       {!cc && <CookieHandler set={setClose} state={closeC} setCook={setCookie} /> }

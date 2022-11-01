@@ -2,24 +2,24 @@ import { useState, useEffect, useRef } from 'react'
 import Router from 'next/router'
 import { magic } from '../lib/magic'
 import EmailForm from './MagicEmail'
-import useOutside from './function/useOutside'
-import styles from '../styles/Master.module.scss'
+// import useOutside from './function/useOutside'
+import styles from '../styles/sass/Login.module.scss'
 import {Magic} from 'magic-sdk'
 import { OAuthExtension } from '@magic-ext/oauth';
-import Loading from './Loading'
+// import Loading from './Loading'
 import { getUser } from '../lib/api'
 import { useCookies } from "react-cookie";
 import { useContext} from 'react'
-import { UserContext } from '../lib/UserContext';
-import initUser from './function/initUser'
+// import { UserContext } from '../lib/UserContext';
+// import initUser from './function/initUser'
 
 const Login = ({set, state, sol, m, r}) => {
     const [func, setFunction] = useState(),
     [login, setLogin] = useState(false),
     [disabled, setDisabled] = useState(false),
     [loading, setLoading] = useState(false),
-    [userCookie, setUC, removeUC] = useCookies(['user']),
-    [user, setUser, posts] = useContext(UserContext)
+    [userCookie, setUC, removeUC] = useCookies(['user'])
+    // [user, setUser, posts] = useContext(UserContext)
 
 
     useEffect(() => {
@@ -42,7 +42,7 @@ const Login = ({set, state, sol, m, r}) => {
             },
         });
         if (res.status == 200) {
-            initUser(setUser,userCookie, m, r, setUC, getUser)
+            // initUser(setUser,userCookie, m, r, setUC, getUser)
             setLoading(!loading)
         }
     }
@@ -58,29 +58,16 @@ const Login = ({set, state, sol, m, r}) => {
         }
     }
 
-    const modal = useRef()
-    useOutside(modal, ()=>{set(!state)}, null)
-
-    async function gotToFB () {
-        await func.oauth.loginWithRedirect({
-            provider: 'facebook',
-            redirectURI: 'https://www.publishingpals.xyz/redirect',
-        });
-    }
+    // const modal = useRef()
+    // useOutside(modal, ()=>{set(!state)}, null)
 
     return (<>
-        {loading && <Loading loading={loading}/>}
+        {/* {loading && <Loading loading={loading}/>} */}
         <div className={styles.login}>
-            <aside >
-                {!login ? 
-                    <span>
-                        <button style={{display:'flex',alignItems:'center', justifyContent:'space-evenly', width:'310px'}} onClick={()=>{setLoading(!loading), gotToFB()}}>{sOl(sol)} with Facebook <img style={{marginLeft:'1%'}} src="https://developers.facebook.com/favicon.ico" alt="" /> </button>
-                    </span>
-                :
+            <aside className={styles.inner}>
                     <span>
                         <EmailForm onEmailSubmit={handleLoginWithEmail} loading={loading} setLoading={setLoading}/>
                     </span>
-                }
             </aside>
             <button style={{marginTop:'20px', fontFamily:'Inter'}} onClick={()=>{set(!state)}}>←</button>
         </div>

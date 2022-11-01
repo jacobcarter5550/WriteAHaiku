@@ -14,7 +14,8 @@ const EmailForm = ({ onEmailSubmit, disabled, }) => {
     }
 
     return (<>
-        <div className={styles.login}>
+        <div className={styles.loginForm}>
+            <img src='/wh.svg'/>
             <form  onSubmit={handleSubmit}>
                 <div >
                     <input
@@ -27,7 +28,7 @@ const EmailForm = ({ onEmailSubmit, disabled, }) => {
                 </div>
                 <hr></hr>
                 <div>
-                    <button 
+                    <button  className='button2'
                         disabled={disabled}
                         onClick={(e)=>{load(), handleSubmit(e)}}>
                         Login with Email

@@ -1,4 +1,4 @@
-import styles from '../styles/sass/SignUp.module.scss'
+import styles from '../styles/sass/Login.module.scss'
 import {Magic} from 'magic-sdk'
 import { OAuthExtension } from '@magic-ext/oauth';
 import { magic } from '../lib/magic'
@@ -33,8 +33,8 @@ function SignUp() {
     }
 
   return (
-    <div className={styles.signup}>
-        <div>
+    <div className={styles.login}>
+        <div className={styles.inner}>
             <EmailForm onEmailSubmit={handleLoginWithEmail}/>
         </div>
     </div>

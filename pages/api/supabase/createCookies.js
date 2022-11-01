@@ -13,11 +13,12 @@ export default async function createCookies ( req, res ) {
 
     if(data == (null || '')) {
         await supabase .from('Cookies').insert([{
-            id:id
+            id:id, 
+            haikus : []
         }])
         res.status(200)
     } else {
-        res.json(data[0])
+        res.status(200)
     }
 
     res.status(200)
