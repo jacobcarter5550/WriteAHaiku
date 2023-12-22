@@ -1,7 +1,7 @@
 function test() {
 
     return (<>
-        <div>brohomeo oh nomeo</div>
+        <div>wasgud</div>
     </>
     )
 }
