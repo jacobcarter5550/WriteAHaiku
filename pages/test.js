@@ -1,7 +1,7 @@
 function test() {
 
     return (<>
-        <div>wasgud</div>
+        <div>testing hoook to socket</div>
     </>
     )
 }
