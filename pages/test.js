@@ -1,7 +1,7 @@
 function test() {
 
     return (<>
-        <div>bruh</div>
+        <div>dman</div>
     </>
     )
 }
