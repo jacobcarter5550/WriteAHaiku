@@ -1,7 +1,7 @@
 function test() {
 
     return (<>
-        <div>more changes</div>
+        <div>new change to branch instead of main</div>
     </>
     )
 }
