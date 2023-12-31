@@ -1,7 +1,7 @@
 function test() {
 
     return (<>
-        <div>hope this works yo</div>
+        <div>this will go to glympse</div>
     </>
     )
 }
