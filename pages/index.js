@@ -6,7 +6,7 @@ import Home from "../components/Home";
 export default function Index({ set }) {
   return (
     <>
-      <p>broken yo</p>
+      <p>damn interesting</p>
       <Home set={set} />
     </>
   );
