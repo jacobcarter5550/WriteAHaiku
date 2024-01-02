@@ -1,7 +1,7 @@
 function test() {
 
     return (<>
-        <div>Another</div>
+        <div>Another push</div>
     </>
     )
 }
