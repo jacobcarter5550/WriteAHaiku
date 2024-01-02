@@ -1,7 +1,7 @@
 function test() {
 
     return (<>
-        <div>but it doesn't</div>
+        <div>Another</div>
     </>
     )
 }
