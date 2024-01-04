@@ -1,5 +1,6 @@
 html,
 body {
+  
   transition: background-image 0.2s ease-in-out;
   padding: 0;
   margin: 0;

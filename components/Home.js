@@ -118,7 +118,6 @@ function Home({set}) {
 
         if(isPass == 0 ){
             setCookies('temp', {id:temp.id, data: [...temp.data, data]})    
-            // updateCookies({id:temp.id, data: [...temp.data, data]})
         } else {} 
         setImgs([]), set(), setPrompts([]), setSylls([])
     }

@@ -33,6 +33,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image" content='/preview.png' />
         <style>{`html, body{background-size: cover;height:100vh; background-repeat: no-repeat; ${bgC} }`}</style>
       </Head>
+      
       <Nav />
       {!cc && <CookieHandler set={setClose} state={closeC} setCook={setCookie} /> }
       <Component {...pageProps} set={setImg}/>
