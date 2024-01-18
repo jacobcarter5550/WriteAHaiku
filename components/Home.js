@@ -145,6 +145,7 @@ function Home({set}) {
                     {areHaikus ? <Link href='/me'>My Haikus</Link> : <p style={{opacity:'50%'}} >My Haikus</p>}
                     <button onClick={()=>{save()}}>Save!</button>
                     {/* <button onClick={()=>{console.log(cookies.temp)}}>test!</button> */}
+                    
                 </div>
             </div>
         </div>

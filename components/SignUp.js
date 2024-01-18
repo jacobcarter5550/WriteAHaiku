@@ -12,6 +12,7 @@ function SignUp() {
             extensions: [new OAuthExtension()],
         });
         // setFunction(magic)
+        
     }, [])
 
     async function handleLoginWithEmail(email) {
