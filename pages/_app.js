@@ -28,6 +28,7 @@ function MyApp({ Component, pageProps }) {
   return <>
       <Head>
         <title>WriteHaiku</title>
+        
         <meta name="theme-color" content="#231F20" media="(prefers-color-scheme: dark)"/>
         <link rel="shortcut icon" href="/wh.svg" />
         <meta property="og:image" content='/preview.png' />
