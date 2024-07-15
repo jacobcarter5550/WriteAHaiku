@@ -1,0 +1,21 @@
+/* Styles for devices with a width below 1700 pixels */
+@media only screen and (max-width: 1699px) {
+ 
+
+  .flex-3 {
+    width: 30%;
+  }
+
+  .item-block label,
+  .item-block span {
+    text-align: center;
+  }
+
+  section.portfolio-section.show .flex-7 {
+    width: 100%;
+  }
+}
+
+@function rem($px) {
+  @return #{$px / 10}rem;
+}

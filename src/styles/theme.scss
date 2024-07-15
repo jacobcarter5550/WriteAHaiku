@@ -1,0 +1,324 @@
+@import "./_variables.scss";
+[data-theme="dark"] {
+    body {
+        background-color: #181818 !important;
+    }
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #383a3e;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px !important;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #9c9d9f;
+    }
+    span,
+    h1,
+    h2,
+    h3,
+    h4,
+    li,
+    ol,
+    label,
+    button,
+    p {
+        color: white !important;
+    }
+    .app-header-container,
+    .portfolio-section {
+        background-color: #181818 !important;
+    }
+
+    table.table-overview thead {
+        background-color: #393939;
+    }
+    table.table-overview th {
+        color: #fff;
+        background-color: #393939;
+    }
+    .subheading {
+        color: #f4f4f4;
+    }
+    .MuiDataGrid-columnHeaders,
+    .cds--accordion__item,
+    .summary-items,
+    .portfolio-overview,
+    .header,
+    .status-section {
+        background-color: #0d0d0d !important;
+    }
+
+    .portfolio-construction {
+        .MuiStack-root {
+            background-color: #0d0d0d !important;
+        }
+        .cds--slider__thumb {
+            background-color: white;
+        }
+    }
+    .restrictionsContent {
+        .MuiDataGrid-columnHeadersInner {
+            color: white;
+        }
+        .MuiDataGrid-virtualScroller {
+            color: white;
+        }
+    }
+
+    .optimization-selection {
+        .MuiTable-root {
+            background: #181818;
+            .MuiTableRow-head {
+                .MuiTableCell-head {
+                    background-color: #0d0d0d;
+                    color: white;
+                }
+            }
+            .MuiTableBody-root {
+                .MuiTableRow-root {
+                    background-color: #0d0d0d;
+
+                    &:nth-child(odd) {
+                        background-color: #181818;
+                    }
+                }
+                .MuiTableCell-root {
+                    color: white;
+                }
+            }
+        }
+        .MuiTablePagination-toolbar {
+            background-color: #0d0d0d;
+        }
+    }
+    .positive-value {
+        color: white;
+    }
+
+    div.title {
+        color: whitesmoke;
+    }
+
+    .MuiDialog-paper,
+    .optimisation-container,
+    .MuiBox-root,
+    .sub-header {
+        background-color: #181818 !important;
+        .dropdowns-section-one {
+            button {
+                border: 1px solid $dark-border-table-color;
+            }
+        }
+    }
+    .optimisations ul li {
+        background-color: #0d0d0d !important;
+    }
+
+    .optimisations ul li:before {
+        background-image: url("../../public/draglight.svg");
+    }
+
+    .cds--tree-node__label {
+        background-color: #0d0d0d !important;
+    }
+
+    .portfolio-container-wrapper h3 {
+        background: #181818 !important;
+    }
+
+    .MuiPopover-paper {
+        background-color: #181818 !important;
+    }
+    .MuiTypography-root {
+        color: white !important;
+    }
+
+    .custom-view {
+        .list-container {
+            background-color: #0d0d0d;
+            .select-all {
+                color: white;
+            }
+        }
+    }
+    .optimisation-container {
+        .strategies {
+            background-color: #181818;
+        }
+    }
+
+    .inputHelper,
+    .arrowHelper {
+        input {
+            background-color: #181818;
+            color: white;
+        }
+    }
+    // .helperofhelper {
+    //   background-color: black;
+    // }
+
+    //Tex Advisory Page Dark Mode
+    .tax-accountant-wrapper {
+        background-color: #181818;
+        .tax-wrapper {
+            background-color: #181818;
+            .portfolio-details {
+                background-color: #0d0d0d !important;
+            }
+            .white-bg {
+                background-color: #181818;
+            }
+        }
+        .tax-breadcrumb {
+            background-color: #0d0d0d !important;
+        }
+        .tax-accountant-grid {
+            border: 0.15px solid #f4f4f4;
+            .copilot-header {
+                background-color: #0d0d0d !important;
+            }
+            .co-pilot-wrapper {
+                border-top: 0.15px solid #8888;
+                .pilot-text-wrapper {
+                    background-color: #181818;
+                    .approval-btn > button.btn.pop-btnNeg {
+                        background: #4e4e4e;
+                        border: 2px solid #4e4e4e;
+                    }
+                    .visualisation-wrapper {
+                        background-color: #0d0d0d !important;
+                        .chart-wrapper {
+                            .price-section {
+                                h4 {
+                                    border: 1px solid #4e4e4e;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .research-view-wrapper {
+        background-color: #262626 !important;
+    }
+    .asset-class-benchmark {
+        background: #161616;
+    }
+    .chart-block-section > div {
+        background: #161616;
+    }
+    .securityView {
+        .security-view-main {
+            background-color: #262626;
+            .security-view-tab-body {
+                .balance-table-container {
+                    background: #161616;
+                    .balance-table-wrapper {
+                        background-color: #262626;
+                        .custom-accordion-wrapper {
+                            color: #f4f4f4;
+                        }
+                        .custom-accordion-wrapper > :first-child:hover {
+                            background-color: #525252;
+                        }
+                        .header-table-wrapper-item {
+                            background: #4e4e4e;
+                            border-bottom: 1px solid #525252;
+                            .header-table-wrapper-item-header {
+                                color: #7699ef;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tab-container {
+        background-color: #161616;
+    }
+    .ratios-overview-container {
+        background-color: $dark-section-background-color;
+        .ratios-overview-header {
+            .excel-file {
+                background-color: #262626;
+            }
+        }
+        .ratios-overview-select-container {
+            background-color: #262626;
+        }
+    }
+    .section-common {
+        background-color: #161616;
+    }
+    .securityMenuBar {
+        background-color: #161616;
+    }
+    .price-and-volume-table {
+        background-color: #262626;
+        color: #f4f4f4;
+        border: 1px solid #373737;
+        tr:hover {
+            background-color: #525252; /* Light mode hover background */
+            color: #f4f4f4;
+        }
+        td,
+        th {
+            border: 1px solid #525252;
+        }
+    }
+
+    //Customize Widget Modal CSS Start
+    .container-block {
+        .main-container {
+            .input-container {
+                background-color: #161616;
+                border: 1px solid $dark-border-color;
+                .securities {
+                    border-bottom: 1px solid $dark-border-color;
+                }
+                .financial-matrix {
+                    border-bottom: 1px solid $dark-border-color;
+                }
+                .lists {
+                    border-bottom: 1px solid $dark-border-color;
+                }
+                .data-format {
+                    border-bottom: 1px solid $dark-border-color;
+                }
+                .panel-layout {
+                    border-bottom: 1px solid $dark-border-color;
+                }
+                .ratios {
+                    border-bottom: 1px solid $dark-border-color;
+                }
+            }
+            .chart-container {
+                background-color: #161616;
+                border: 1px solid $dark-border-color;
+                .chart-main-container {
+                    .chart-body-container {
+                        border: $dark-dotted-border;
+                    }
+                }
+            }
+        }
+    }
+}
+@function rem($px) {
+    @return #{$px / 10}rem;
+}

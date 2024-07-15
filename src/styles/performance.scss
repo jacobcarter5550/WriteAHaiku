@@ -1,0 +1,78 @@
+.performance-wrapper .react-grid-item {
+    background: transparent !important;
+    z-index: 9;
+    overflow: auto;
+    border: 0 !important;
+}
+
+
+.dropdown-flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.custom-table-row-container h2 {
+    text-align: left;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 1.3rem !important;
+}
+
+.parent-block {
+    background: #ffffff;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.rishtablewrappwr {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.rishtablewrappwr .table-parent {
+    width: 32%;
+    padding: 7px;
+    background: #ffffff;
+    padding: 1rem;
+}
+
+.table-parent h3 {
+    font-size: 1.4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table-parent {
+    background: #ffffff;
+    padding: 1rem;
+}
+
+.heading-wrapper-block {
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+gap: 10px;
+    padding-bottom: 2rem;
+}
+
+.performance-wrapper .cds--tabs .cds--tabs__nav-link {
+    width: 22rem;
+    text-align: center;
+}
+
+.performance-wrapper .cds--tabs .cds--tabs__nav-link > div {justify-content: center;}

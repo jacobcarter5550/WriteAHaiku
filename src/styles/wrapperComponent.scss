@@ -1,0 +1,11 @@
+@import "./_variables.scss";
+
+[data-theme="dark"] {
+    .section-comp-container {
+        background-color: #0d0d0d;
+    }
+}
+.section-comp-container {
+    background-color: #fff;
+}
+

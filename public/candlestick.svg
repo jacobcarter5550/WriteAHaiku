@@ -1,0 +1,12 @@
+<svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="chart--candlestick 1" clip-path="url(#clip0_8916_147163)">
+<path id="Vector" d="M33 12.5H30.5V7.5H28V12.5H25.5V27.5H28V32.5H30.5V27.5H33V12.5ZM30.5 25H28V15H30.5V25Z" fill="black"/>
+<path id="Vector_2" d="M18 10H15.5V5H13V10H10.5V22.5H13V27.5H15.5V22.5H18V10ZM15.5 20H13V12.5H15.5V20Z" fill="black"/>
+<path id="Vector_3" d="M38 37.5H5.5C4.83696 37.5 4.20107 37.2366 3.73223 36.7678C3.26339 36.2989 3 35.663 3 35V2.5H5.5V35H38V37.5Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_8916_147163">
+<rect width="40" height="40" fill="white" transform="translate(0.5)"/>
+</clipPath>
+</defs>
+</svg>

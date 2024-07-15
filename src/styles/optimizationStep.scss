@@ -1,0 +1,60 @@
+@import "./_variables.scss";
+[data-theme="dark"] {
+    .optimizationModal {
+        .contentWrapper {
+            .col {
+                .title {
+                    background-color: $dark-header-background-in-modal;
+                    color: #8c9cff;
+                }
+                .body {
+                    background-color: $dark-section-background-color;
+                }
+            }
+        }
+    }
+}
+.optimizationModal {
+    height: 46rem;
+    display: block;
+
+    .contentWrapper {
+        justify-content: space-between;
+        display: flex;
+        gap: 1rem;
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 22.5rem;
+
+            .title {
+                padding: 1.5rem;
+                text-align: center;
+                font-weight: 500;
+                color: #383c93;
+                font-size: 1.2rem;
+                background-color: $light-header-background-in-modal;
+            }
+
+            .body {
+                border: 0.5px solid black;
+                background-color: #ffffff;
+                padding: 0px 0.75rem;
+                max-height: 100%;
+                overflow: scroll;
+
+                .accountItem {
+                    padding: 0.75rem;
+                }
+            }
+        }
+    }
+}
+
+/* MyGridStyles.css */
+.security-header .ag-header-cell-label {
+    height: 50px;
+    line-height: 50px; /* Vertically center the text */
+}

@@ -1,0 +1,233 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    flex: 1; /* Take remaining space in body */
+    justify-items: center;
+  }
+  
+  .mermaid svg {
+    max-height: 1300px;
+    width: auto;
+  }
+  
+  #output-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  #output {
+    flex: 1;
+    height: 100%;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .node {
+    cursor: pointer;
+    fill: #ffcc00; /* Change fill color to yellow */
+    stroke: #f90; /* Change stroke color to orange */
+  }
+  
+  /* .node {
+  } */
+  
+  
+  .cssClass > rect {
+      fill: #ff0000;
+      stroke: #ffff00;
+      stroke-width: 4px;
+  }
+  
+  .thoughtBubble {
+      fill: none;
+      stroke: #333;
+      stroke-width: 2px;
+  }
+  
+  .thoughtBubbleText {
+      fill: #333;
+      font-style: italic;
+      /* font-size: 12px; */
+  }
+  
+  /* Thought bubble shape */
+  .bubble {
+      position: absolute;
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 15px;
+      padding: 10px;
+      /* width: 350px; */
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 1;
+      transition: opacity 0.2s ease;
+  }
+  
+  .bubble::after {
+      content: '';
+      position: absolute;
+      border-style: solid;
+      border-width: 10px 10px 0;
+      border-color: black transparent;
+      display: block;
+      width: 0;
+      z-index: 1;
+      top: 100%;
+      left: 10px;
+  }
+  
+  /* CSS Spinner */
+  .spinner {
+      width: 1em;
+      height: 1em;
+      border: 0.2em solid rgba(0, 0, 0, 0.1);
+      border-left-color: #333;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-right: 0.5em;
+  }
+  
+  @keyframes spin {
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+  
+  .bubble:hover {
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+  }
+  
+  .report-list-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+  }
+  
+  .report-list {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    width: 70vw;
+    box-sizing: border-box;
+    border-radius: 16px;
+  }
+  
+  .report-item {
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  
+  .report-item:hover {
+    background-color: #e9ecef;
+    }
+    
+    .report-item.active {
+      background-color: #cce5ff;
+      border-color: #b8daff;
+    }
+  
+  
+    /* Styling for the select dropdown and options */
+  select {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    appearance: none; /* Remove default arrow */
+    width: 200px; /* Adjust width as needed */
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  select:hover,
+  select:focus {
+    border-color: #333; /* Darken border on hover/focus */
+  }
+  
+  select option {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  select option:hover {
+    background-color: #f8f8f8; /* Lighten background on hover */
+  }
+  
+  /* Checkbox styling */
+  .custom-checkbox {
+    display: none; /* Hide the default checkbox */
+  }
+  
+  .custom-checkbox + label {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .custom-checkbox + label:before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border: 2px solid #007bff;
+    /* border-radius: 50%; */
+    background-color: transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .custom-checkbox:checked + label:before {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .custom-checkbox:checked + label:after {
+    content: '\2713'; /* Checkmark character */
+    position: absolute;
+    top: 50%;
+    /* left: 12px; */
+    transform: translate(20%, -50%);
+    font-size: 24px;
+    color: #fff;
+  }
+  

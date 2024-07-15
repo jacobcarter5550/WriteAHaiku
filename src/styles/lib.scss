@@ -1,0 +1,394 @@
+.treeHelper {
+  span {
+    font-size: 1.2rem;
+  }
+  .cds--tree-node__label {
+    line-height: 2rem;
+    padding-block-start: 0px !important;
+    .cds--tree-parent-node__toggle {
+      margin-block-start: 0.5rem;
+    }
+  }
+  .cds--tree-node__label__details {
+    width: 100%;
+  }
+}
+
+.sliderHelper {
+  .cds--slider-container--two-handles {
+    gap: 1.5rem;
+  }
+  .cds--popover-container:not(.cds--popover--auto-align) {
+    position: absolute;
+  }
+  display: flex;
+  flex-direction: initial !important;
+  .cds--label {
+    display: none !important;
+  }
+}
+
+.slideHelper {
+  width: 15%;
+  display: contents !important;
+}
+
+.cds--slider {
+  min-inline-size: 5vw !important;
+}
+
+.inputHelper {
+  .cds--text-input-wrapper {
+    flex: none;
+  }
+}
+
+.radioHelper {
+  .cds--form-item {
+    align-items: center;
+  }
+}
+
+.alignRight {
+  justify-content: "flex-end";
+  box-shadow: none !important;
+
+  .details {
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+.helper {
+  margin-left: 25.7rem;
+  margin-top: 0px !important;
+  min-width: auto !important;
+  width: 40px;
+}
+
+.disabledHelper > * {
+  opacity: 0.5;
+}
+
+.buttonMarginHelper {
+  margin: 0px 1rem;
+}
+
+.arrowHelper {
+  overflow: visible;
+  // border-block-end: 1px solid var(--cds-border-subtle);
+  // border-block-start: 1px solid var(--cds-border-subtle);
+  .cds--accordion__arrow {
+    display: none;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.inpHelper {
+  width: 4em;
+}
+
+.rowEndHelper {
+  display: flex;
+  justify-content: space-evenly;
+  // width: 700px !important;
+
+  & > * {
+    margin: 0px 1em;
+  }
+}
+
+.rowStart {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chartHeaderHelper {
+  .cds--chart-holder {
+    .header {
+      display: none;
+    }
+  }
+}
+
+.MuiPaper-elevation {
+  // border-top: 1px ridge rgba(0, 0, 0, 0.5);
+  // border-bottom: 1px ridge rgba(0, 0, 0, 0.5);
+  border-radius: 0px !important;
+}
+
+.toggleHelper {
+  .cds--toggle__appearance {
+    direction: rtl;
+
+    .cds--toggle__switch {
+      direction: ltr;
+    }
+  }
+}
+
+.accordHelper {
+  .cds--accordion__heading {
+    padding-right: 0px;
+  }
+
+  .cds--accordion__title {
+    padding: 0px;
+  }
+}
+
+.titleHeader {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 10px; /* Adjust the width as needed */
+    height: 10px; /* Adjust the height as needed */
+    background-image: url("../../public/downArrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px; /* Adjust the space between the image and the text */
+    background-position-y: 3px;
+  }
+}
+
+.titleRemover {
+  &::before {
+    visibility: hidden !important;
+  }
+}
+
+.zHelper {
+  position: relative;
+  z-index: 100;
+}
+
+.innerModal {
+  position: absolute;
+  min-width: 3em;
+  height: 200px;
+  background: white;
+  z-index: 10;
+  border: 1px solid black;
+  width: 300px;
+  overflow: scroll;
+
+  p {
+    padding-left: 0.5em;
+    border-block-end: 1px solid var(--cds-border-subtle);
+    border-block-start: 1px solid var(--cds-border-subtle);
+
+    min-width: fit-content;
+
+    &:hover {
+      background-color: #f5f5f5;
+    }
+  }
+}
+
+.imgRowHelper {
+  justify-content: space-between;
+  width: 99%;
+
+  img {
+    width: 1.5vw;
+    margin: 0.6em;
+    padding: 0.5em;
+    background-color: #383c93;
+  }
+}
+
+.progressBarHelper {
+  .cds--progress-bar__track::after {
+    background-image: linear-gradient(
+      90deg,
+      var(--cds-interactive, #23cc01) 12.5%,
+      transparent 12.5%
+    ) !important;
+  }
+
+  .cds--progress-bar__bar {
+    color: #23cc01;
+  }
+}
+
+.muiListHelper {
+  .MuiListItemText-primary {
+    font-size: 0.96rem;
+    line-height: 1.4rem;
+    color: #161616;
+  }
+}
+.select-header-container {
+  font-size: 1.04rem;
+  padding: 10px 0px 10px 15px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1.4rem;
+  cursor: pointer;
+}
+.select-header-container:hover {
+  background-color: #f4f4f4;
+}
+.select-header-container-dark-mode {
+  font-size: 1.2rem;
+  padding: 10px 0px 10px 15px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 800;
+  cursor: pointer;
+}
+.select-header-container-dark-mode:hover {
+  background-color: #393939;
+}
+// notification css
+
+.notification-button {
+  text-transform: none;
+  font-weight: bold;
+  background-color: transparent;
+  box-shadow: none;
+  border: 0;
+}
+
+.notification-heading {
+  padding: 8px 1.6rem;
+  font-weight: bold;
+}
+
+.notification-paragraph {
+  padding: 8px 1.6rem;
+  font-size: 1.2rem;
+}
+
+.notification-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 1.6rem;
+}
+
+.notification-content {
+  display: flex;
+  align-items: center;
+}
+
+.view-details-link {
+  color: blue;
+  text-decoration: none;
+}
+
+.mark-as-read {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 1.6rem;
+}
+
+.notification-header p {
+  font-size: 1.2rem;
+  color: #525252;
+}
+.notification-header h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.ag-watermark {
+  display: none !important;
+}
+
+@function rem($px) {
+  @return #{$px / 10}rem;
+}
+
+.toggleBCHelper {
+  .cds--toggle__text {
+    font-size: 1.2rem;
+  }
+}
+
+.cds--list-box__label {
+  font-size: 1.2rem !important;
+}
+
+.tileItem {
+  h2,
+  p {
+    text-align: left !important;
+  }
+}
+
+.css-hfutr2-MuiSvgIcon-root-MuiSelect-icon,
+.css-bpeome-MuiSvgIcon-root-MuiSelect-icon {
+  position: relative !important;
+  top: 0px !important;
+}
+
+.toolbarContainer {
+  width: 90%;
+  height: 3rem;
+  max-width: 37.8rem;
+
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem;
+  img {
+    width: 1.8rem;
+  }
+}
+
+.cds--overflow-menu[aria-label="Portfolio Characs: ToolBar"] {
+  display: none !important;
+}
+.cds--overflow-menu[aria-label="Security Characs: ToolBar"] {
+  display: none !important;
+}
+.cds--overflow-menu[aria-label="Portfolio Return: ToolBar"] {
+  display: none !important;
+}
+
+.layout-child.header {
+  padding: 0px !important;
+}
+
+.layout-child {
+  .toolbar {
+    width: 100% !important;
+  }
+}
+
+.spacer.layout-child {
+  display: none !important;
+}
+
+.firstContainer {
+  width: 20vw;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  h4 {
+    color: black;
+    font-weight: 600;
+    padding-left: 0.5rem;
+  }
+
+  .cds--toggle__appearance {
+    direction: rtl;
+
+    .cds--toggle__switch {
+      direction: ltr;
+    }
+  }
+}
+
+.widthHelper {
+  cursor: pointer;
+  width: 6rem;
+  font-size: 1.1rem !important;
+}

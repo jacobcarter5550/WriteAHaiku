@@ -1,0 +1,41 @@
+.advisorReport {
+  height: 100%;
+  h1 {
+    font-size: 2.2rem !important;
+    color: #000000;
+  }
+
+  .idea {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+
+  th {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    background-color: #f4f4f4;
+    color: black;
+  }
+
+  td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .tax_reduction {
+    color: #009900;
+    font-weight: bold;
+  }
+}

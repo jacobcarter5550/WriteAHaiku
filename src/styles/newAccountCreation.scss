@@ -1,0 +1,155 @@
+@import "./_variables.scss";
+.new-account-creation-modal-container {
+  // width: 100%;
+}
+.step-one-main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 97%;
+  h1 {
+    text-align: center;
+  }
+  .import-account-container {
+    border: 1px solid $light-border-color;
+    background-color: #fff;
+    padding: 2rem;
+    .import-account-header {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        font-weight: 500;
+        color: #000;
+      }
+    }
+    .import-account-drag-container {
+      border: $light-dotted-border;
+      min-height: 50vh;
+      margin-top: 1rem;
+      .drag-image-container {
+      }
+    }
+  }
+  .step-one-form-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    padding: 16px;
+    .step-one-form-element {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      label {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+.step-second-main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  height: 52rem;
+  h1 {
+    text-align: center;
+  }
+  .main-container {
+    display: flex;
+    width: 95%;
+    gap: 1rem;
+    justify-content: space-between;
+    margin: auto;
+
+    .child-container {
+      flex: 1;
+      flex-grow: 0;
+      // padding: 20px;
+      // height: calc(100vh - 23rem);
+      // overflow: auto;
+    }
+    .left-section {
+      flex: 0 1 30%;
+      max-width: 30%;
+      border: 1px solid #e0e0e0;
+      background: #fff;
+      padding: 1.6rem 0.9rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      max-height: 120rem;
+      height: 48rem;
+      overflow-y: scroll;
+      @mixin account-text {
+        color: #525252;
+        font-size: 1.15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 0.8rem;
+      }
+      .named-account {
+        border: 1px solid #e0e0e0;
+        background: #f4f4f4;
+        height: 3rem;
+        min-height: 3rem;
+
+        @include account-text;
+      }
+
+      .unnamed-account {
+        border-bottom: 1px solid #8d8d8d;
+        background: #f4f4f4;
+        height: 3rem;
+        min-height: 3rem;
+
+        .cds--text-input {
+          border-block-end: unset;
+        }
+        @include account-text;
+      }
+    }
+    .right-section {
+      flex: 0 1 67%;
+      max-width: 67%;
+      background: #fff;
+      padding: 1.4rem 1.5rem;
+      .account-form-container {
+        .form-group {
+          margin-bottom: 0.6rem;
+        }
+        form {
+          label,
+          label.cds--label {
+            color: #161616;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: block;
+            // height: 1.4rem;
+            margin-block-end: 0.6rem;
+            line-height: 1.3rem;
+          }
+          .form-group-parent {
+            display: flex;
+            justify-content: space-between;
+            gap: 0.8rem;
+          }
+          .cds--text-input {
+            border-block-end: 1px solid #8d8d8d;
+          }
+
+          input {
+            height: 3.2rem;
+          }
+        }
+      }
+    }
+  }
+}

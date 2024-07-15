@@ -1,0 +1,264 @@
+@use "@carbon/react";
+@import url("./styles/queries.scss");
+@import url("./styles/dashboard.scss");
+@import url("./styles/login.scss");
+@import url("./styles/portfolioconstruction.scss");
+@import url("./styles/responsive.scss");
+@import url("./styles/lib.scss");
+@import url("./styles/toggleSwitch.scss");
+@import url("./styles/theme.scss");
+@import url("./styles/securityView.scss");
+@import url("./styles/taxMgmt.scss");
+@import url("./styles/overview.scss");
+@import url("./styles/loading.scss");
+@import url("./styles/optimizationStep.scss");
+@import url("./styles/ratiosOverview.scss");
+@import url("./styles/assetView.scss");
+@import url("./styles/widgets.scss");
+@import url("./styles/newAccountCreation.scss");
+@import url("./styles/_variables.scss");
+@import url("./styles/research-custmisedWidget-model.scss");
+@import url("./styles/wrapperComponent.scss");
+@import url("./styles/advisor.scss");
+@import url("./styles/performance.scss");
+@import url("./styles/alternativeInvestment.scss");
+@import url("./styles/mermaid.scss");
+
+@function rem($px) {
+  @return #{$px / 10}rem;
+}
+.app-container {
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #f4f4f4 !important;
+}
+
+:root {
+  --cds-body-compact-01-font-size: 1rem; /* New font size */
+}
+
+p,
+span,
+button,
+input,
+td,
+tr,
+section,
+a,
+div,
+label {
+  font-size: 1.1rem;
+}
+
+.App {
+  text-align: center;
+  background: #f5f7f9;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@media (max-width: 1375px) {
+  html {
+    font-size: 8.5px;
+  }
+}
+
+@media (min-width: 1700px) {
+  html {
+    font-size: 12.5px;
+  }
+}
+@media (min-width: 2000px) {
+  html {
+    font-size: 17.5px;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+[data-theme="dark"] {
+  p {
+    color: white !important;
+  }
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+.flex-7 {
+  width: 68.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+/* theme scss */
+.cds--tabs.cds--tabs--contained
+  .cds--tabs__nav-item.cds--tabs__nav-item--selected {
+  // box-shadow: inset 0 -2px 0 0 var(--cds-border-interactive, #0f62fe);
+}
+
+.mermaid {
+  width: 100%;
+  svg {
+    font-size: 1rem !important;
+  }
+}
+
+.fullscreen-container {
+  width: 95.5vw;
+  height: 100vh;
+  overflow: hidden; /* Optional: Prevents scrollbars on the iframe if its content is too large */
+}
+
+.fullscreen-iframe {
+  width: 100%;
+  height: 100%;
+  border: none; /* Removes the border around the iframe */
+}
+.fullscreen-iframe2 {
+  width: 100%;
+  height: 85%;
+  border: none; /* Removes the border around the iframe */
+}
+
+.accordianItemSpacing {
+  div {
+    width: 12.5rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .cds--password-input-wrapper .cds--text-input__invalid-icon {
+    inset-inline-end: 3.5rem !important;
+  }
+
+  .cds--btn.cds--text-input--password__visibility__toggle.cds--tooltip__trigger {
+    inline-size: 3.5rem !important;
+  }
+}
+
+.report-item.active {
+  background-color: #cce5ff;
+  border-color: #b8daff;
+}
+
+.cds--chart-holder .layout-child.title {
+  width: 200px;
+}
+
+.cds--chart-holder .layout-child.toolbar {
+  display: flex;
+  align-items: center;
+}
+
+.cds--cc--legend {
+  width: 400px !important;
+  padding-top: 3rem;
+}
+
+.legend-item.checkbox {
+  display: block !important;
+}
+
+
+.advisorReport {
+  h2{
+    padding-top: 2rem;
+  }
+}
+
+.info-box { 
+  
+  .cds--chart-holder .layout-child.title{
+    width: 100rem !important;
+  }
+}
+
+.chat-content{
+  h3{
+    margin-top: 1.75rem;
+  }
+}
+
+.pie-chart-wrapper {
+  .chart-holder{
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.pdf-document-wrapper canvas {
+  width: 95% !important;
+  height: auto !important;
+}
+
+.cds--tabs__nav-link{
+  padding-top: 3px !important;
+}
+
+.react-pdf__Page{
+  width: 40vw;
+}

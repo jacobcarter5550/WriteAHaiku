@@ -1,0 +1,14 @@
+FROM --platform=linux/amd64 node:lts-alpine AS builder
+
+WORKDIR '/app'
+
+
+ENV REACT_APP_HOST_IP_ADDRESS "testing"
+
+COPY ./package*.json .
+RUN npm install
+
+COPY ./src /app/src
+COPY ./public /app/public
+
+CMD ["npm", "run", "start"]

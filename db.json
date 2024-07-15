@@ -1,0 +1,155 @@
+{
+  "widgets" : [
+
+  ],
+  "assetClass": [
+    {
+      "heading": "Asset Class",
+      "data": [
+        {
+          "id": "a",
+          "symbol": "BBMBTR",
+          "name": "Bloomberg Municipal",
+          "latest": "13,039",
+          "CHG1": "0.60",
+          "CHG2": "0.06%",
+          "date": "04/19 20.00"
+        },
+        {
+          "id": "b",
+          "symbol": "BBMBTR",
+          "name": "Bloomberg Municipal",
+          "latest": "13,039",
+          "CHG1": "0.60",
+          "CHG2": "0.06%",
+          "date": "04/19 20.00"
+        },
+        {
+          "id": "c",
+          "symbol": "BBMBTR",
+          "name": "Bloomberg Municipal",
+          "latest": "13,039",
+          "CHG1": "0.60",
+          "CHG2": "0.06%",
+          "date": "04/19 20.00"
+        },
+        {
+          "id": "d",
+          "symbol": "BBMBTR",
+          "name": "Bloomberg Municipal",
+          "latest": "13,039",
+          "CHG1": "0.60",
+          "CHG2": "0.06%",
+          "date": "04/19 20.00"
+        },
+        {
+          "id": "e",
+          "symbol": "BBMBTR",
+          "name": "Bloomberg Municipal",
+          "latest": "13,039",
+          "CHG1": "0.60",
+          "CHG2": "0.06%",
+          "date": "04/19 20.00"
+        },
+        {
+          "id": "f",
+          "symbol": "BBMBTR",
+          "name": "Bloomberg Municipal",
+          "latest": "13,039",
+          "CHG1": "0.60",
+          "CHG2": "0.06%",
+          "date": "04/19 20.00"
+        },
+        {
+          "id": "g",
+          "symbol": "BBMBTR",
+          "name": "Bloomberg Municipal",
+          "latest": "13,039",
+          "CHG1": "0.60",
+          "CHG2": "0.06%",
+          "date": "04/19 20.00"
+        },
+        {
+          "id": "h",
+          "symbol": "BBMBTR",
+          "name": "Bloomberg Municipal",
+          "latest": "13,039",
+          "CHG1": "0.60",
+          "CHG2": "0.06%",
+          "date": "04/19 20.00"
+        },
+        {
+          "id": "i",
+          "symbol": "BBMBTR",
+          "name": "Bloomberg Municipal",
+          "latest": "13,039",
+          "CHG1": "0.60",
+          "CHG2": "0.06%",
+          "date": "04/19 20.00"
+        },
+        {
+          "id": "j",
+          "symbol": "BBMBTR",
+          "name": "Bloomberg Municipal",
+          "latest": "13,039",
+          "CHG1": "0.60",
+          "CHG2": "0.06%",
+          "date": "04/19 20.00"
+        },
+        {
+          "id": "k",
+          "symbol": "BBMBTR",
+          "name": "Bloomberg Municipal",
+          "latest": "13,039",
+          "CHG1": "0.60",
+          "CHG2": "0.06%",
+          "date": "04/19 20.00"
+        },
+        {
+          "id": "l",
+          "symbol": "BBMBTR",
+          "name": "Bloomberg Municipal",
+          "latest": "13,039",
+          "CHG1": "0.60",
+          "CHG2": "0.06%",
+          "date": "04/19 20.00"
+        },
+        {
+          "id": "m",
+          "symbol": "BBMBTR",
+          "name": "Bloomberg Municipal",
+          "latest": "13,039",
+          "CHG1": "0.60",
+          "CHG2": "0.06%",
+          "date": "04/19 20.00"
+        }
+      ],
+      "headers": [
+        {
+          "key": "symbol",
+          "header": "Symbol"
+        },
+        {
+          "key": "name",
+          "header": "Name"
+        },
+        {
+          "key": "latest",
+          "header": "Latest"
+        },
+        {
+          "key": "CHG1",
+          "header": "%CHG1"
+        },
+        {
+          "key": "CHG2",
+          "header": "%CHG2"
+        },
+        {
+          "key": "date",
+          "header": "As of (FT)"
+        }
+      ]
+    }
+  ]
+}

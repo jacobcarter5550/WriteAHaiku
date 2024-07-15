@@ -1,0 +1,238 @@
+@import "./_variables.scss";
+//Customize Widget Modal CSS Start
+.container-block {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100%;
+
+    .header-container {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        .left-section {
+            display: flex;
+            gap: 0.25rem;
+            align-items: center;
+            span {
+                color: $light-primary-color;
+                font-weight: 400;
+            }
+        }
+        .right-section {
+            display: flex;
+            gap: 2rem;
+            .sub-section {
+                display: flex;
+                gap: 0.25rem;
+                align-items: center;
+                h3 {
+                    color: $light-secondary-color;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .main-container {
+        display: flex;
+        gap: 1rem;
+        .input-container {
+            width: 27%;
+            border: 1px solid $light-border-color;
+            background-color: #ffffff;
+            height: calc(80vh - 2.7rem);
+            overflow: auto;
+            .input-text {
+                display: flex;
+                padding: 1rem 1rem;
+                justify-content: start;
+                h4{
+                    font-weight: 600;
+                    font-size: 1.7rem;
+                }
+            }
+            .securities {
+                border-bottom: 1px solid $light-border-color;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 0 1rem;
+                padding-bottom: 1rem;
+                .securities-text {
+                    display: flex;
+                    gap: 0.5rem;
+                    align-items: center;
+                }
+                .securities-input-container {
+                    display: flex;
+                }
+            }
+            .financial-matrix {
+                border-bottom: 1px solid $light-border-color;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                .matrix-container {
+                    display: flex;
+                    gap: 0.5rem;
+                    .matrix-input-container {
+                        display: flex;
+                    }
+                    .divisor {
+                        border-right: 1px solid $light-button-primary-background-color;
+                    }
+                }
+            }
+            .lists {
+                display: flex;
+                gap: 1rem;
+                padding: 1rem;
+                border-bottom: 1px solid $light-border-color;
+                justify-content: space-between;
+                .list-text {
+                    display: flex;
+                    gap: 0.5rem;
+                    align-items: center;
+                }
+            }
+            .data-format {
+                display: flex;
+                gap: 1rem;
+                padding: 1rem;
+                flex-direction: column;
+                border-bottom: 1px solid $light-border-color;
+                .data-format-text {
+                    display: flex;
+                    gap: 0.5rem;
+                    align-items: center;
+                }
+            }
+            .panel-layout {
+                display: flex;
+                gap: 1rem;
+                padding: 1rem;
+                flex-direction: column;
+                border-bottom: 1px solid $light-border-color;
+            }
+            .ratios {
+                display: flex;
+                gap: 1rem;
+                padding: 1rem;
+                justify-content: space-between;
+                border-bottom: 1px solid $light-border-color;
+                align-items: center;
+                button {
+                    background-color: $light-button-primary-background-color;
+                }
+            }
+        }
+        .chart-container {
+            border: 1px solid $light-border-color;
+            width: 100%;
+            background-color: #ffffff;
+            height: calc(80vh - 2.7rem);
+            overflow: auto;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            .chart-header {
+                display: flex;
+                gap: 1rem;
+                justify-content: space-between;
+                align-items: center;
+                .toggle-container {
+                    display: flex;
+                    gap: 0.5rem;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .chart-main-container {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                height: calc(80vh - 2.7rem);
+                overflow: auto;
+                .chart-sub-header {
+                    display: flex;
+                    gap: 1rem;
+                    justify-content: space-between;
+                    align-items: center;
+                    .tab-date-container {
+                        display: flex;
+                        gap: 1rem;
+                        align-items: center;
+                        .date-container {
+                            display: flex;
+                            gap: 3rem;
+                        }
+                    }
+                    .icon-container {
+                        display: flex;
+                        gap: 1rem;
+                    }
+                }
+                .chart-body-container {
+                    border: $light-dotted-border;
+                    height: calc(80vh - 2.7rem);
+                    overflow: auto;
+                }
+            }
+        }
+    }
+}
+.add-button {
+    background-color: $light-button-primary-background-color;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: unset;
+}
+.add-button:hover {
+    background-color: $light-button-primary-background-color-hover;
+}
+.browse-button {
+    border: 1px solid $light-button-primary-background-color;
+    color: $light-button-primary-background-color;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: unset;
+}
+.browse-button:hover {
+    background-color: $light-button-primary-background-color;
+}
+
+.filterHeaderStyle {
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    color: #161616;
+}
+
+@media screen and (max-width: 1537px) {
+    .container-block {
+        .main-container {
+            .input-container {
+                height: calc(80vh - 5.7rem);
+                overflow: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1282px) {
+    .container-block {
+        .main-container {
+            .input-container {
+                height: calc(80vh - 7.7rem);
+                overflow: auto;
+            }
+        }
+    }
+}
+//Customize Widget Modal CSS End

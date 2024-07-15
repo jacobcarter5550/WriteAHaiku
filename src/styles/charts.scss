@@ -1,0 +1,444 @@
+@import "./_variables.scss";
+[data-theme="dark"] {
+    section.portfolio-overview table td {
+        border-left: 0.5px solid $dark-border-table-color;
+    }
+    section.portfolio-overview table th,
+    section.portfolio-overview table td {
+        border-top: 0.5px solid $dark-border-table-color;
+    }
+    .summary-table-container {
+        border: 1px solid $dark-border-table-color;
+        color: #f4f4f4;
+
+        thead {
+            background-color: #393939;
+            th {
+                color: #fff;
+                background-color: #393939;
+            }
+        }
+        .table-center {
+            text-align: center;
+            padding: 0px !important;
+        }
+    }
+
+    .date-range-selector {
+        background-color: #383838 !important;
+        color: #f4f4f4 !important;
+        .cds--date-picker__input {
+            background-color: #383838 !important;
+            color: #f4f4f4 !important;
+            border-bottom: 1px solid #f4f4f4 !important;
+        }
+    }
+    .flatpickr-calendar.animate.open {
+        background-color: #383838 !important;
+    }
+    .flatpickr-prev-month svg,
+    .flatpickr-next-month svg {
+        fill: #f4f4f4 !important;
+    }
+}
+
+section.portfolio-overview {
+    background: #ffffff;
+    // padding-top: 0.5vh;
+    position: relative;
+}
+
+.custom-icon {
+    height: 15px !important;
+}
+
+.details-block {
+    .cds--chart-holder {
+        padding-top: 0.5rem !important;
+        padding-bottom: 1rem !important;
+    }
+    .apexcharts-toolbar-custom-icon {
+        line-height: normal;
+    }
+    .apexcharts-toolbar {
+        top: 0.5rem !important;
+        gap: 0.75rem;
+        max-width: 50rem;
+        align-items: center;
+
+        .apexcharts-menu-icon {
+            opacity: 0.7;
+            margin: 0px;
+            fill: #fff;
+            svg {
+                visibility: hidden;
+            }
+            background-image: url("../../public/menu.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            color: transparent;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .apexcharts-zoomin-icon {
+            opacity: 0.7;
+            margin: 0px;
+            svg {
+                visibility: hidden;
+            }
+            background-image: url("../../public/add--alt.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            color: transparent;
+
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .apexcharts-reset-icon {
+            opacity: 0.7;
+            margin: 0px;
+            svg {
+                visibility: hidden;
+            }
+            background-image: url("../../public/reset.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            color: transparent;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .apexcharts-zoomout-icon {
+            opacity: 0.7;
+            svg {
+                visibility: hidden;
+            }
+            background-image: url("../../public/subtract--alt.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            color: transparent;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .apexcharts-zoom-icon {
+            svg {
+                visibility: hidden;
+            }
+            background-image: url("../../public/zoom--in.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            color: transparent; /* Hide the original icon if it's font-based */
+            /* Adjust width and height as needed to fit your new icon */
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        & > * {
+            width: 1.5rem;
+            // height: 1.5rem;
+            transform: scale(1);
+            svg,
+            img {
+                width: 1.5rem;
+            }
+        }
+    }
+    .apexcharts-menu.apexcharts-menu-open {
+        padding: 0px;
+        .apexcharts-menu-item {
+            height: auto;
+        }
+    }
+    .cds--cc--layout-row {
+        align-items: baseline;
+        .title {
+            height: 0px !important;
+        }
+    }
+    text-align: left;
+    // max-width: 500px;
+}
+.details-block-dark-mode {
+    .apexcharts-toolbar-custom-icon {
+        line-height: normal;
+    }
+    .apexcharts-toolbar {
+        gap: 0.75rem;
+        max-width: 50rem;
+        align-items: center;
+
+        .apexcharts-menu-icon {
+            svg {
+                fill: #f4f4f4;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+
+        .apexcharts-zoomin-icon {
+            svg {
+                fill: #f4f4f4;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            svg:hover {
+                fill: #f4f4f4;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+
+        .apexcharts-reset-icon {
+            svg {
+                fill: #f4f4f4;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+
+        .apexcharts-zoomout-icon {
+            svg {
+                fill: #f4f4f4;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+
+        .apexcharts-zoom-icon {
+            svg {
+                fill: #f4f4f4;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+        .apexcharts-menu {
+            background-color: #181818;
+            color: #f4f4f4;
+        }
+        & > * {
+            width: 1.5rem;
+            // height: 1.5rem;
+            transform: scale(1);
+            svg,
+            img {
+                width: 1.5rem;
+            }
+        }
+    }
+    .apexcharts-menu.apexcharts-menu-open {
+        padding: 0px;
+        .apexcharts-menu-item {
+            background-color: #181818;
+            height: auto;
+        }
+        .apexcharts-menu-item:hover {
+            background-color: #393939;
+            height: auto;
+        }
+    }
+    .cds--cc--layout-row {
+        align-items: baseline;
+        .title {
+            height: 0px !important;
+        }
+    }
+    text-align: left;
+    // max-width: 500px;
+}
+.details-block th:not(:first-child),
+.details-block td:not(:first-child) {
+    // text-align: center;
+}
+section.history-overview,
+section.security-overview,
+section.portfolio-overview {
+    // padding: 0.75rem;
+    padding-bottom: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    position: relative;
+    .toggle-on,
+    .toggle-on-return {
+        display: block;
+    }
+    .toggle-off,
+    .toggle-off-return {
+        display: none;
+    }
+    .toggleHelper {
+        transform: scale(3);
+        margin-right: 18px;
+        margin-top: -10px;
+    }
+    .compare-button {
+        display: flex;
+        padding: 0.4rem 3rem;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        flex-shrink: 0;
+        background-color: #383c93;
+        min-block-size: 2rem;
+        color: white;
+        font-size: 12px;
+    }
+    .control-bar-portfolio {
+        position: absolute;
+        top: 31px;
+        left: 67%;
+        transform: translateX(-50%);
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: space-between;
+        input,
+        span {
+            color: #383c93;
+            cursor: pointer;
+        }
+        img {
+            cursor: pointer;
+        }
+    }
+    .control-bar {
+        position: absolute;
+        top: 31px;
+        left: 62%;
+        transform: translateX(-50%);
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: space-between;
+        input,
+        span {
+            color: #383c93;
+            cursor: pointer;
+        }
+        img {
+            cursor: pointer;
+        }
+    }
+    .date-range-selector {
+        position: absolute;
+        top: 50px;
+        left: 200px;
+        background-color: #f4f4f4;
+        padding: 1rem 0 1rem 2rem;
+        .cds--date-picker__input {
+            background-color: #ffffff;
+            border-bottom: 1px solid black;
+        }
+    }
+    .table-block {
+        max-height: 30rem;
+        overflow-y: scroll;
+        .control-bar {
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            input,
+            span {
+                color: #383c93;
+                cursor: pointer;
+            }
+            img {
+                cursor: pointer;
+            }
+            .compare-button {
+                display: flex;
+                padding: 7px 1.6rem;
+                justify-content: center;
+                align-items: center;
+                gap: 32px;
+                flex-shrink: 0;
+                background-color: #383c93;
+                min-block-size: 2rem;
+            }
+        }
+    }
+    .table-block-container {
+        max-height: 28rem;
+        overflow-y: auto;
+    }
+}
+section.portfolio-overview-bottom-padding {
+    padding-bottom: 1rem;
+}
+section.portfolio-overview table th {
+    background: #f0f0f0;
+    color: #383c93;
+}
+
+section.portfolio-overview table th,
+section.portfolio-overview table td {
+    padding: 10px;
+    padding: 0.8rem;
+    padding-left: 2.2rem;
+    padding-right: 0px;
+    border-top: 0.5px solid #e0e0e0;
+}
+
+section.portfolio-overview table td {
+    border-left: 0.5px solid #e0e0e0;
+}
+
+section.history-overview h1,
+section.security-overview h1,
+section.portfolio-overview.toggled h1 {
+    position: absolute;
+    z-index: 99;
+    top: 30px;
+    line-height: 2rem;
+}
+.my-return-chart-root {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+.date-range-selector {
+    position: absolute;
+    top: 36px;
+    z-index: 99;
+    left: 25px;
+    // background-color: #f5f7f9;
+    // padding: 10px 0px 10px 2rem;
+    .cds--date-picker__input {
+        background-color: #ffffff;
+        border-bottom: 1px solid black;
+    }
+}
+
+.details-block-dark-mode {
+    .cds--chart-holder {
+        padding-top: 0.5rem !important;
+        padding-bottom: 1rem !important;
+    }
+}
+.summary-table-container {
+    border: 1px solid #e0e0e0;
+
+    thead {
+        background-color: #393939;
+        th {
+            color: #fff;
+            background-color: #393939;
+        }
+    }
+    .title {
+        color: #383c93;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    .table-center {
+        text-align: center;
+        padding: 0px !important;
+    }
+}

@@ -1,0 +1,15 @@
+.ad-grid-container {
+  height: 68vh;
+}
+
+@media (min-height: 640px) and (max-height: 800px) {
+  .ad-grid-container {
+    height: 60vh;
+  }
+}
+
+@media (min-height: 800px) and (max-height: 950px) {
+  .ad-grid-container {
+    height: 64vh;
+  }
+}

@@ -1,0 +1,127 @@
+@function rem($px) {
+  @return #{$px / 10}rem;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 rem(35);
+  background-color: #ffffff;
+  color: #fff;
+  border-bottom: 1.5px solid #c8c9ca;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    img {
+      width: 8vw;
+      margin-right: 0.5em;
+    }
+  }
+
+  .middleContent {
+    padding-right: 1vw;
+    border-left: 1px solid #8d8d8d;
+    border-right: 1px solid #8d8d8d;
+  }
+
+  & .menu {
+    ul.dropdown-list {
+      list-style: none;
+      display: flex;
+      padding-left: 0;
+      gap: 2.5rem;
+      margin-left: 1.1rem;
+      align-items: center;
+      // .cds--list-box__menu-icon {
+      //     display: none !important;
+      // }
+      .nav-buttons {
+        color: #161616;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        background: none;
+        padding-inline-end: unset;
+
+        &:focus {
+          border: unset;
+          box-shadow: unset;
+        }
+      }
+    }
+
+    li {
+      position: relative;
+
+      a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  & .search {
+    @media (min-width: 2000px) {
+      svg {
+        transform: scale(1.5);
+      }
+    }
+
+    img {
+      width: 1.5vw;
+    }
+    gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    input {
+      width: 353px;
+      height: 40px;
+      padding: 4px 9px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background: #f0f0f0;
+    }
+
+    & .search-icon {
+      border: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      cursor: pointer;
+      position: absolute;
+      color: #f0f0f0;
+      right: 8px;
+    }
+  }
+
+  & .left-side {
+    display: flex;
+  }
+
+  .profile-dorpdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > button {
+      display: flex;
+      flex-direction: column;
+      .title {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+      .role {
+        font-size: 10px;
+        color: #525252;
+        text-overflow: ellipsis;
+        width: 9.3rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: left;
+      }
+    }
+  }
+}

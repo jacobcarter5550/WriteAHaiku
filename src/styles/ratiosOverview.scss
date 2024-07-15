@@ -1,0 +1,135 @@
+@import "./_variables.scss";
+
+[data-theme="dark"] {
+    .ratios-overview-container {
+        .ratios-overview-header {
+            .ratios-overview-header-left {
+                h4 {
+                    color: #7699ef !important;
+                }
+            }
+        }
+        .ratios-overview-graph-container {
+            .ratios-overview-graph-container-item {
+                .header-icon-container {
+                    background-color: #333333;
+                }
+            }
+        }
+    }
+}
+
+.ratios-overview-container {
+    background-color: white;
+    padding: 0.5em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .ratios-overview-header {
+        display: flex;
+        justify-content: space-between;
+        .ratios-overview-header-left {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            h1 {
+                font-size: 1.5em !important;
+                font-weight: 800 !important;
+            }
+            h4 {
+                font-weight: 800;
+                font-size: 1.2em !important;
+                color: #383c93 !important;
+            }
+        }
+        .right-section-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            .fill-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                span {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                }
+            }
+            .excel-file {
+                background-color: #e8e8e8;
+            }
+        }
+    }
+    .divider {
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .ratios-overview-select-container {
+        .css-1xc3v61-indicatorContainer {
+            padding: 0px;
+        }
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background-color: #e5e5e5;
+        padding: 0.6rem;
+        span {
+            font-weight: 600;
+        }
+    }
+    .ratios-overview-graph-container {
+        display: flex;
+        gap: 1rem;
+        height: calc(100vh - 21rem);
+        overflow: auto;
+        .ratios-overview-graph-container-item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            .header-icon-container {
+                display: flex;
+                gap: 1rem;
+                justify-content: space-between;
+                background-color: #e5e5e5;
+                .icon-containers {
+                    display: flex;
+                    gap: 0.2rem;
+                }
+            }
+            h4 {
+                font-weight: 800;
+                padding: 0.5rem 1rem;
+            }
+            .price-and-volume-section {
+                .price-and-volume-table-container {
+                    padding: 0.5rem 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                }
+            }
+        }
+    }
+}
+.section-common {
+    border: 1px solid #e0e0e0;
+    background-color: #f5f7f9;
+}
+.price-and-volume-table {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-collapse: collapse;
+    background-color: white;
+    tr:hover {
+        background-color: #f2f2f2; /* Light mode hover background */
+    }
+    td,
+    th {
+        border: 1px solid #e0e0e0;
+        border-collapse: collapse;
+        padding: 0.5rem 1rem;
+        text-align: end;
+    }
+}
